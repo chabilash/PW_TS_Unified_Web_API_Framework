@@ -1,0 +1,26 @@
+{
+    "TC1" : {
+        "login" : {
+            "username" : "abilashchintalacheruvula@gmail.com",
+            "password" : "P@ssw0rd"
+        },
+        "home" : {
+            "productName" : "MacBook"
+        },
+        "product" : {
+            "size" : "",
+            "color" : "",
+            "quantity" : "2"
+        },
+        "checkout" : {
+            "fullName" : "",
+            "firstName" : "",
+            "lastName" : "",
+            "postalCode" : ""
+        }
+
+    },
+
+    "TC2" : {},
+    "TC3" : {}
+}

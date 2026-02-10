@@ -1,0 +1,4 @@
+
+interface HomeDataLayer {
+    productName: string;
+}

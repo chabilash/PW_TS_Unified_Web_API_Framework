@@ -1,6 +1,7 @@
 import { Locator, Page } from "@playwright/test";
 import AccountPOM from "./accountpom";
 import LoginInputDao from "../dao/inputdao/LoginInputDao";
+import HomePOM from "./homepom";
 
 export default class LoginPOM {
     private page: Page;
@@ -10,13 +11,13 @@ export default class LoginPOM {
 
     constructor(page: Page) {
         this.page = page;
-        this.usernameTB = this.page.locator('#input-email');
-        this.passwordTB = this.page.locator('#input-password');
-        this.loginButton = this.page.locator('input[value="Login"]');
+        this.usernameTB = this.page.locator('#Email');
+        this.passwordTB = this.page.locator('#Password');
+        this.loginButton = this.page.locator(`input[type="submit"][value="Log in"]`);;
     }
 
     public async goTo(): Promise<LoginPOM> {
-        await this.page.goto('opencart/index.php?route=account/login');
+        await this.page.goto('login');
         return this;
     }
 
@@ -35,14 +36,14 @@ export default class LoginPOM {
         return this;
     }
 
-    public async login(loginInputDao: LoginInputDao): Promise<AccountPOM> {
+    public async login(loginInputDao: LoginInputDao): Promise<HomePOM> {
         // await this.usernameTB.fill(username);
         // await this.passwordTB.fill(password);
 
         await this.fillUsername(loginInputDao.getUsername());
         await this.fillPassword(loginInputDao.getPassword());
         await this.clickLogin();
-        return new AccountPOM(this.page);
+        return new HomePOM(this.page);
          
     }
 }

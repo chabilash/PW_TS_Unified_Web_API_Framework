@@ -5,18 +5,31 @@
             "password" : "P@ssw0rd"
         },
         "home" : {
-            "productName" : "MacBook"
+            "productName" : "14.1-inch Laptop"
         },
         "product" : {
             "size" : "",
             "color" : "",
-            "quantity" : "2"
+            "quantity" : "4"
+        },
+        "shoppingcart" : {
+            "itemquantity" : "2",
+            "country" : "United States",
+            "state" : "Florida",
+            "zipPostalCode" : "33101"
         },
         "checkout" : {
-            "fullName" : "",
-            "firstName" : "",
-            "lastName" : "",
-            "postalCode" : ""
+            "selectbillingaddress" : "New Address",
+            "country" : "United States",
+            "state" : "Florida",
+            "firstName" : "Abilash",
+            "lastName" : "Chintalacheruvula",
+            "zipPostalCode" : "33101",
+            "address1" : "123 Main St",
+            "address2" : "Apt 4B",
+            "city" : "Miami",
+            "phoneNumber" : "1234567890",
+            "email" : "abilashchintalacheruvula@gmail.com"
         }
 
     },
